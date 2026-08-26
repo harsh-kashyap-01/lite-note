@@ -4,6 +4,7 @@ body{
     color: white;
     overflow-x: hidden;
     -ms-overflow-style: none; 
+    touch-action: none;
 }
 button{
     cursor: pointer;
