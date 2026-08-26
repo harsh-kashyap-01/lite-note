@@ -1,0 +1,109 @@
+
+body{
+    background: black;
+    color: white;
+    overflow-x: hidden;
+    -ms-overflow-style: none; 
+}
+button{
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.801);
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.801);
+}
+header button{
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.801);
+    transition: 0.2s;
+}
+header button:hover{
+    transform: scale(1.1,1.1);
+    color: white;
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 95vh;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 15vh;
+    transform: translateX(100%);
+    text-align: center;
+    background: rgb(34, 34, 34);
+    column-gap: 5px;
+    padding-top: 10px;
+}
+aside button{
+    height: 7vh;
+    border: none;
+    background: rgb(34, 34, 34);
+    color: white;
+}
+aside button a{
+    color: white;
+}
+aside button:hover{
+    background: rgb(68, 68, 68);
+}
+aside select{
+    height: 7vh;
+    background: rgb(34, 34, 34);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+}
+aside input{
+    height: 7vh;
+    background: rgb(30, 30, 30);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    outline: none;
+}
+aside select:focus{
+    outline: none;
+}
+aside label{
+    background: rgb(34, 34, 34);
+    color: white;
+}
+
+.active{
+    transform: translateX(0vh);
+}
+main section textarea{
+    width: 95%;
+    height: 90vh;
+    max-height: 90vh;
+    background: transparent;
+    color: white;
+    padding: 15px;
+}
+main section textarea:focus{
+    outline: rgba(255, 255, 255, 0.568);
+}
+main section{
+    flex: 1;
+    width: 100%;
+}

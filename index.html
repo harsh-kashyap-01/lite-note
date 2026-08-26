@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite-Note</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    
+    <header>
+        <h1><i class="fa-solid fa-feather"></i> Lite Note</h1>
+        <button id="menu"><i class="fa-solid fa-bars fa-2x"></i></button>
+    </header>
+
+    <main>
+
+        <section id="main-screen">
+
+            <textarea id="input" placeholder="Stat writing..."></textarea>
+
+        </section>
+
+        <aside id="menu-screen">
+            <button onclick="newnote()"><i class="fa-solid fa-file"></i> NEW</button>
+            <button onclick="about()"><i class="fa-solid fa-circle-info"></i> ABOUT</button>
+            <button><a href="https://my-portfolio-six-amber-sb1kq4ag05.vercel.app/">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> MORE
+            </a></button>
+            <label for="font"><i class="fa-solid fa-font"></i> FONT</label>
+            <select id="font">
+                <option value="moonspace">Moonspace</option>
+                <option value="arial">Arial</option>
+            </select>
+            <label for="font-size">Font Size</label>
+            <input id="font-size" value="16" max="100">
+
+        </aside>
+
+    </main>
+
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
